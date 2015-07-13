@@ -95,12 +95,12 @@
    `(font-lock-comment-delimiter-face	((t (:foreground ,ample/dark-gray))))
    `(font-lock-function-name-face	((t (:foreground ,ample/green))))
    `(font-lock-keyword-face		((t (:foreground ,ample/blue))))
-   `(font-lock-string-face		((t (:foreground ,ample/tan))))
+   `(font-lock-string-face		((t (:foreground ,ample/yellow))))
    `(font-lock-preprocessor-face	((t (:foreground ,ample/orange))))
    `(font-lock-type-face		((t (:foreground ,ample/red))))
    `(font-lock-constant-face		((t (:foreground ,ample/purple))))
    `(font-lock-warning-face		((t (:foreground "red" :bold t))))
-   `(font-lock-variable-name-face	((t (:foreground ,ample/yellow))))
+   `(font-lock-variable-name-face	((t (:foreground ,ample/red))))
    `(font-lock-doc-face			((t (:foreground ,ample/dark-tan))))
 
    ;; mode line & powerline
@@ -118,6 +118,10 @@
    `(header-line ((t (:background ,ample/fg :foreground ,ample/bg))))
 
    `(button  ((t (:foreground ,ample/lighter-blue :background nil :underline t))))
+
+   ;; smartparens
+   `(sp-show-pair-match-face ((t (:foreground ,ample/orange :weight bold :underline t))))
+   `(sp-pair-overlay-face ((t (:background ,ample/darker-gray :foreground nil))))
 
    ;; search
    `(isearch		((t (:background ,ample/blue :foreground ,ample/bg))))
@@ -183,7 +187,7 @@
    `(error ((t (:foreground "red"))))
 
    ;; ido
-   `(ido-only-match		((t (:foreground ,ample/green))))
+   `(ido-only-match		((t (:background ,ample/darkest-gray :foreground ,ample/green))))
    `(ido-first-match		((t (:foreground ,ample/blue))))
    `(ido-incomplete-regexp	((t (:foreground ,ample/red))))
    `(ido-subdir			((t (:foreground ,ample/yellow))))
@@ -499,7 +503,7 @@
    ;;`(org-table ((t (:foreground nil :background nil))))
    ;;`(org-tag ((t (:foreground nil :background nil))))
    ;;`(org-target ((t (:foreground nil :background nil))))
-   ;;`(org-time-grid ((t (:foreground nil :background nil))))   
+   ;;`(org-time-grid ((t (:foreground nil :background nil))))
    ;;`(org-upcoming-deadline ((t (:foreground nil :background nil))))
    ;;`(org-verbatim ((t (:foreground nil :background nil))))
    ;;`(org-verse ((t (:foreground nil :background nil))))
